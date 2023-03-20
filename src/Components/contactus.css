@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+.contact{
+        background-image: url(https://wallpaper.dog/large/20496552.jpg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        color: #fff;
+        padding: 60px 0;
+}
+
+.contact h1{
+    font-size: 45px;
+    font-family: 'Josefin Sans';
+}
+
+.contact-section{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #ccccce;
+}
+
+.contact-form{
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact-form input{
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+    width: 90%;
+    background-color: #f0f0f0;
+    padding: 10px 40px 10px 20px;
+    border-radius: 8px;
+    box-shadow: 
+      inset -5px -5px 10px #ffffff, 
+      inset 5px 5px 10px #d9d9d9;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contact-form textarea{
+    border: none;
+    height: 120px;
+    outline: none;
+    padding: 10px 10px;
+    margin: 20px 0 0 0;
+    width: 90%;
+    background-color: #f0f0f0;
+    padding: 10px 40px 10px 20px;
+    border-radius: 8px;
+    box-shadow: 
+    inset -5px -5px 10px #ffffff, 
+    inset 5px 5px 10px #d9d9d9;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 100;
+    resize: none;
+}
+
+.contact-form button{
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    width: 30%;
+    font-family: 'Titillium Web';
+    font-size: 20px;
+    cursor: pointer;
+    background: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    color: #06283B;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+.contact-form button:disabled{
+    cursor: not-allowed;
+  }
+
+.contact-details{
+    margin-left: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-details p{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.contact-sm{
+    margin-top: 10px;
+}
+
+.contactus-cc{
+    font-family: 'Josefin Sans';
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-details{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contact-details p{
+        font-family: 'Open Sans';
+        font-size: 14px;
+        font-weight: 100;
+        margin: 10px 0;
+    }
+    
+    .contact-form{
+        margin-right: 0;
+    }
+}

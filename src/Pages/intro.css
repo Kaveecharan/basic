@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1000;
+    text-align: center;
+  }
+
+.inter-content{
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.intro-left{
+  margin-left: 7vw;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans';
+  flex: 6;
+  margin-top: -10vh;
+}
+
+.intro-left h2{
+  text-align: left;
+  font-size: 45px;
+  font-weight: bolder;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.intro-left p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgb(5, 181, 194);
+}
+
+.intro-left  .color-h2{
+  color: rgb(5, 181, 194);
+  font-size: 30px;
+}
+
+.color-h2 {
+  position: relative;
+  margin-right: 1rem;
+}
+.color-h2:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 7px;
+  width: 100%;
+  border: solid 4px rgb(5, 181, 194);
+  border-color: rgb(5, 181, 194) transparent transparent transparent;
+  border-radius: 90%;
+}
+
+.intro-left button{
+  margin-top: 30px;
+  border: 2px solid rgb(5, 181, 194);
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: none;
+  width: 200px;
+  font-size: 19px;
+  font-family: 'Josefin Sans';
+  font-weight: 100;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.intro-left button:hover{
+  background: rgb(5, 181, 194);
+  border: none;
+}
+
+.intro-right{
+  padding-top: 5%;
+  margin-right: 7vw;
+  padding-bottom: 75px;
+  flex: 5; 
+  background: linear-gradient(to top left, #02383b 10%, transparent 50%);
+}
+
+.intro-image{
+  width: 85%;
+  transition: transform 10s ease;
+  animation: size-reduce 25s ease forwards;
+}
+
+@keyframes size-reduce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .inter-content{
+    top: 80px;
+  }
+
+  .intro-left h2{
+    font-size: 20px;
+  }
+
+  .intro-left p{
+    font-size: 14px;
+  }
+
+  .intro-left button{
+    margin-top: 15px;
+    border: 1px solid rgb(5, 181, 194);
+    padding: 3px 10px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 50%;
+    font-size: 17px;
+  }
+  
+  .intro-left button:hover{
+    background: rgb(5, 181, 194);
+    border: none;
+  }
+  
+  .intro-right{
+    padding-bottom: 25px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .inter-content{
+    top: 100px;
+    border: 10p solid red;
+  }
+
+  .intro-left h2{
+    font-size: 22px;
+  }
+
+  .intro-left button{
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .intro-left p{
+    font-size: 11px;
+    margin-bottom: 5px;
+  }
+
+  .intro-right{
+    margin-top: -12vh;
+  }
+}
